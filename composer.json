@@ -7,6 +7,11 @@
             "OluwatobiAkanji\\ModulrAuth\\": "src/"
         }
     },
+    "autoload-dev": {
+        "psr-4": {
+          "OluwatobiAkanji\\ModulrAuth\\Tests\\": "tests"
+        }
+    },
     "authors": [
         {
             "name": "Oluwatobi Akanji"
@@ -24,5 +29,8 @@
                 "AuthHeader": "OluwatobiAkanji\\ModulrAuth\\Facade\\AuthHeader"
             }
         }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5"
     }
 }
