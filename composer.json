@@ -28,10 +28,7 @@
     },
     "scripts": {
         "test": "vendor/bin/phpunit",
-        "test-coverage": "XDEBUG_MODE=coverage vendor/bin/phpunit --coverage-html coverage",
-        "post-install-cmd": [
-            "php artisan vendor:publish --tag=modulr-config"
-        ]
+        "test-coverage": "XDEBUG_MODE=coverage vendor/bin/phpunit --coverage-html coverage"
     },
     "extra": {
         "laravel": {
