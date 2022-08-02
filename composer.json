@@ -2,6 +2,12 @@
     "name": "oluwatobiakanji/laravel-modulr-auth",
     "description": "Laravel 9 package to generate authentication headers for Modulr Finance",
     "license": "MIT",
+    "authors": [
+        {
+            "name": "Oluwatobi Akanji",
+            "email": "akanjioluwatobishadrach@yahoo.com"
+        }
+    ],
     "autoload": {
         "psr-4": {
             "OluwatobiAkanji\\ModulrAuth\\": "src/"
@@ -12,11 +18,6 @@
           "OluwatobiAkanji\\ModulrAuth\\Tests\\": "tests/"
         }
     },
-    "authors": [
-        {
-            "name": "Oluwatobi Akanji"
-        }
-    ],
     "require": {
         "illuminate/support": "~6|~7|~8|~9",
         "orchestra/testbench": "^7.0",
@@ -27,7 +28,10 @@
     },
     "scripts": {
         "test": "vendor/bin/phpunit",
-        "test-coverage": "XDEBUG_MODE=coverage vendor/bin/phpunit --coverage-html coverage"
+        "test-coverage": "XDEBUG_MODE=coverage vendor/bin/phpunit --coverage-html coverage",
+        "post-package-install": [
+            "php artisan vendor:publish --tag=modulr-config"
+        ]
     },
     "extra": {
         "laravel": {
