@@ -20,20 +20,12 @@ class AuthHeader
     private ?string $nonce = null;
     private ?string $timestamp = null;
 
-    public function getModulrRoute(): string {
-        $baseRoute = App::isProduction() 
-            ? config('modulr.live_base_url') 
-            : config('modulr.local_base_url');
-
-        return config('modulr.base_url').$baseRoute;
-    }
-
     public function getHeaders(?string $nonce=null, ?string $timestamp=null): array{
         $apiKey = config('modulr.key');
         $apiSecret = config('modulr.secret');
 
-        $nonce = $nonce ?? Str::uuid();
-        $timestamp = $timestamp ?? now()->toRfc7231String();
+        $nonce = $nonce ?? $this->nonce ?? Str::uuid();
+        $timestamp = $timestamp ?? $this->timestamp ?? now()->toRfc7231String();
 
         $auth = new AuthSignatureGenerator($apiKey, $apiSecret);
         return $auth->calculateHeaders($nonce, $timestamp)->getHTTPHeaders();

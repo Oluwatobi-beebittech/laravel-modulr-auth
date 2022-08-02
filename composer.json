@@ -9,7 +9,7 @@
     },
     "autoload-dev": {
         "psr-4": {
-          "OluwatobiAkanji\\ModulrAuth\\Tests\\": "tests"
+          "OluwatobiAkanji\\ModulrAuth\\Tests\\": "tests/"
         }
     },
     "authors": [
@@ -18,7 +18,16 @@
         }
     ],
     "require": {
-        "illuminate/support": "^9.20"
+        "illuminate/support": "^9.20",
+        "orchestra/testbench": "^7.6",
+        "illuminate/contracts": "^9.22"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5"
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "XDEBUG_MODE=coverage vendor/bin/phpunit --coverage-html coverage"
     },
     "extra": {
         "laravel": {
@@ -26,11 +35,8 @@
                 "OluwatobiAkanji\\ModulrAuth\\ModulrAuthServiceProvider"
             ],
             "aliases": {
-                "AuthHeader": "OluwatobiAkanji\\ModulrAuth\\Facade\\AuthHeader"
+                "AuthHeader": "OluwatobiAkanji\\ModulrAuth\\Facades\\AuthHeader"
             }
         }
-    },
-    "require-dev": {
-        "phpunit/phpunit": "^9.5"
     }
 }

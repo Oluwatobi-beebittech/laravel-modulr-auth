@@ -36,7 +36,7 @@ class AuthSignatureGenerator
         return "date: $timestamp\nx-mod-nonce: $nonce";
 	}
 
-    public function calculateHeaders(string $nonce, string $timestamp): AuthorizationResult{
+    public function calculateHeaders(string $nonce, string $timestamp): AuthResult{
         $apiKey = $this->getAPIKey();
         $apiSecret = $this->getAPISecret();
 
