@@ -24,7 +24,7 @@ class ModulrAuthServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->publishes([
-            __DIR__.'/../resources/config/modulr.php' => config_path('modulr.php'),
+            dirname(__DIR__, 1).'/resources/config/modulr.php' => config_path('modulr.php'),
         ]);
     }
 

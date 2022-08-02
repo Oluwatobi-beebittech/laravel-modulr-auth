@@ -13,7 +13,7 @@ namespace OluwatobiAkanji\ModulrAuth\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
-class AuthHeaders extends Facade
+class AuthHeader extends Facade
 {
     protected static function getFacadeAccessor()
     {

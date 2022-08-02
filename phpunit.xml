@@ -27,7 +27,7 @@
     </testsuite>
   </testsuites>
   <php>
-    <env name="DB_CONNECTION" value="testing"/>
-    <env name="APP_KEY" value="base64:2fl+Ktvkfl+Fuz4Qp/A75G2RTiWVA/ZoKZvp6fiiM10="/>
+    <env name="MODULR_API_KEY" value="TOKENKNOWN-"/>
+    <env name="MODULR_API_SECRET" value="NzAwZmIwMGQ0YTJiNDhkMzZjYzc3YjQ5OGQyYWMzOTI="/>
   </php>
 </phpunit>
