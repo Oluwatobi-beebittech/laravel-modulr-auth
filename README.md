@@ -1,4 +1,10 @@
 # Laravel Modulr Authentication Header
+[![Latest Stable Version](http://poser.pugx.org/oluwatobiakanji/laravel-modulr-auth/v)](https://packagist.org/packages/oluwatobiakanji/laravel-modulr-auth)
+[![License](http://poser.pugx.org/oluwatobiakanji/laravel-modulr-auth/license)](https://packagist.org/packages/oluwatobiakanji/laravel-modulr-auth)
+[![Total Downloads](http://poser.pugx.org/oluwatobiakanji/laravel-modulr-auth/downloads)](https://packagist.org/packages/oluwatobiakanji/laravel-modulr-auth)
+[![GitHub stars](https://img.shields.io/github/stars/Oluwatobi-beebittech/laravel-modulr-auth)](https://github.com/Oluwatobi-beebittech/laravel-modulr-auth/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/Oluwatobi-beebittech/laravel-modulr-auth)](https://github.com/Oluwatobi-beebittech/laravel-modulr-auth/network)
+
 Laravel package to generate authentication headers for Modulr Finance
 
 ## Installation
